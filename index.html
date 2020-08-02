@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LWSG PTE LTD</title>
+    <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|IBM+Plex+Sans:600" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<style>
+    table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 90%;
+  max-width: 100%;
+  text-align: left;
+  .center {
+    text-align: center;
+  }
+}
+
+th,
+td {
+  padding: 0.5rem;
+  vertical-align: top;
+}
+
+th {
+  text-align: inherit;
+}
+
+thead th {
+  font-weight: 600;
+  vertical-align: bottom;
+  color: $color_primary;
+  border-bottom: (2 * 1px) solid lighten($color_primary, 35%);
+}
+
+td {
+  border-top: 1px solid lighten($color_primary, 40%);
+}
+
+.dictionary {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 4rem auto;
+  max-width: 90%;
+}
+
+a {
+  color: inherit;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: solid 2px lighten($color_secondary, 10%);
+  &:hover {
+    border-color: $color_primary;
+  }
+}
+
+.dictionary>.term {
+  text-align: center;
+  max-width: 20rem;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  border-radius: 3px;
+  box-shadow: 
+    0 2px 0    rgba(0,0,0,0.05),
+    0 5px 20px rgba(0,0,0,0.1);
+  background-color: #fff;
+  transition: all 100ms ease-in-out;
+  &:hover {
+    transform: scale(1.01) translateY(-4px);
+    box-shadow: 
+      0 2px 0    rgba(0,0,0,0.05),
+      0 3px 10px rgba(0,0,0,0.1),
+      0 5px 20px rgba(0,0,0,0.2);
+  }
+}
+
+
+.dictionary>.term>dt {
+  margin-bottom: 1rem;
+}
+
+dt {
+  color: $color_primary;
+  line-height: 1;
+  span {
+    font-size: 200%;
+    font-weight: 900;
+  }
+}
+
+dd {
+  font-size: 92.5%;
+  margin-left: 0;
+}
+
+dd dt {
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+  font-size: inherit;
+}
+
+dd dl {
+  font-size: 90%;
+  margin: 1rem auto 0 auto;
+  letter-spacing: 0.33px;
+  max-width: 15rem;
+}
+
+strong {
+  color: $color_primary;
+}
+
+dd dl .term {
+  margin-bottom: 1rem;
+}
+
+dd strong {
+  border-bottom: solid 1px rgba(255,255,255,0.5);
+}
+</style>
+
+</head>
+<body class="is-boxed has-animations">
+    <div class="body-wrap boxed-container">
+        <header class="site-header">
+            <div class="container">
+                <div class="site-header-inner">
+                    <div class="brand header-brand">
+                        <h1 class="m-0">
+                            <a href="#">
+								<img class="header-logo-image asset-light" src="dist/images/logo-light.svg" alt="Logo">
+								<img class="header-logo-image asset-dark" src="dist/images/logo-dark.svg" alt="Logo">
+                            </a>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-inner">
+						<div class="hero-copy">
+                            <h1 class="hero-title mt-0">LWSG PTE LTD</h1>
+	                        <p class="hero-paragraph">Game Backends Software Solution.</p>
+	                        <div class="hero-cta">
+								<div class="lights-toggle">
+									<input id="lights-toggle" type="checkbox" name="lights-toggle" class="switch" checked="checked">
+									<label for="lights-toggle" class="text-xs"><span>Turn me <span class="label-text">dark</span></span></label>
+								</div>
+							</div>
+						</div>
+						<div class="hero-media">
+							<div class="header-illustration">
+								<img class="header-illustration-image asset-light" src="dist/images/header-illustration-light.svg" alt="Header illustration">
+								<img class="header-illustration-image asset-dark" src="dist/images/header-illustration-dark.svg" alt="Header illustration">
+							</div>
+							<div class="hero-media-illustration">
+								<img class="hero-media-illustration-image asset-light" src="dist/images/hero-media-illustration-light.svg" alt="Hero media illustration">
+								<img class="hero-media-illustration-image asset-dark" src="dist/images/hero-media-illustration-dark.svg" alt="Hero media illustration">
+							</div>
+							<div class="hero-media-container">
+								<img class="hero-media-image asset-light" src="dist/images/hero-media-light.png" alt="Hero media">
+								<img class="hero-media-image asset-dark" src="dist/images/hero-media-dark.png" alt="Hero media">
+							</div>
+						</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="features section">
+                <div class="container">
+					<div class="features-inner section-inner has-bottom-divider">
+                        <div class="features-header text-center">
+                                <div class="container-sm">
+                                    <h2 class="section-title mt-0">Game Backends Solution</h2>
+                                    <p class="section-paragraph">All our services are high quality, as we offer our partners the best from the best.</p>
+                                </div>
+                        </div>
+                        <div class="features-wrap" style="margin-top:100px">
+                            <div class="feature is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<img class="asset-light" src="dist/images/light-01.png" alt="Feature 01">
+										<img class="asset-dark" src="dist/images/dark-01.png" alt="Feature 01">
+                                    </div>
+									<div class="feature-content">
+                                    	<h3 class="feature-title mt-0">Server Management</h3>
+                                    	<p class="text-sm mb-0">LW solution provisions instances, deploys your game servers onto running instances, load-balances traffic across fleets of game servers, monitors instance and game server health, and replaces unhealthy instances without your intervention.</p>
+									</div>
+								</div>
+                            </div>
+							<div class="feature is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<img class="asset-light" src="dist/images/light-02.png" alt="Feature 02">
+										<img class="asset-dark" src="dist/images/dark-02.png" alt="Feature 02">
+                                    </div>
+									<div class="feature-content">
+                                    	<h3 class="feature-title mt-0">Social & Multiplayer
+                                        </h3>
+                                    	<p class="text-sm mb-0">Friends, leaderboards, chat, and the full range of multiplayer options, including highly performant Realtime. Teams, tournaments, lobbies and matchmaking all included.
+                                        </p>
+									</div>
+								</div>
+                            </div>
+							<div class="feature is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<img class="asset-light" src="dist/images/light-03.png" alt="Feature 03">
+										<img class="asset-dark" src="dist/images/dark-03.png" alt="Feature 03">
+                                    </div>
+									<div class="feature-content">
+                                    	<h3 class="feature-title mt-0">Auto Scaling
+                                        </h3>
+                                    	<p class="text-sm mb-0">Dynamically scalable cloud-based capacity from all the major providers combined with high quality infrastructure management. Design your solution for dedicated clusters, region deployment and premium SLA.</p>
+									</div>
+								</div>
+                            </div>
+                            <div class="feature is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<img class="asset-light" src="dist/images/light-04.png" alt="Feature 03">
+										<img class="asset-dark" src="dist/images/dark-04.png" alt="Feature 03">
+                                    </div>
+									<div class="feature-content">
+                                    	<h3 class="feature-title mt-0">Player Management
+
+                                        </h3>
+                                    	<p class="text-sm mb-0">Full access to player history and summaries of activity. View and edit player records and reward top players or remove unwanted players.</p>
+									</div>
+								</div>
+                            </div>
+                            <div class="feature is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<img class="asset-light" src="dist/images/light-05.png" alt="Feature 03">
+										<img class="asset-dark" src="dist/images/dark-05.png" alt="Feature 03">
+                                    </div>
+									<div class="feature-content">
+                                    	<h3 class="feature-title mt-0">Analytics
+                                        </h3>
+                                    	<p class="text-sm mb-0">Store every action a player takes on the backend in its lowest granular form. Our fully extensible API enables you to set up and track your own custom queries. Our dashboard gives you an immediate view on how your game is performing.</p>
+									</div>
+								</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+			<section class="cta section">
+                <div class="">
+                    <div class="cta-inner section-inner">
+                        <div class="cta-header text-center">
+                            <h2 class="section-title mt-0">Our Pricing & Plans</h2>
+                            <dl class="dictionary">
+                                <div class="term">
+                                  <dt>
+                                    <h4 style="color:#8595AE !important">Solution Pricing</h4>
+                                  </dt>
+                                  <dd>
+                                    <ul  style="text-align:left; list-style-type: none;">
+                                            <li>- <strong>Evaluation:</strong> Free</li>
+                                            <li>- <strong>Enterprise:</strong> TBD</li>
+                                            <li>- <strong>Student:</strong> Free to launch, Pay us on success</li>
+                                    </ul> 
+                                  </dd>
+                                </div>
+                                
+                                <div class="term">
+                                  <dt>
+                                    <h4 style="color:#8595AE !important">Backend Hosting Pricing</h4> 
+                                  </dt>
+                                  <dd>
+                                        <ul style="text-align:left; list-style-type: none;">
+                                                <li>- <strong>Small:</strong> 2 CPU, $60 per Month</li>
+                                                <li>- <strong>Medium:</strong> 4 CPU, $120 per Month</li>
+                                                <li>- <strong>Large:</strong> 8 CPU, $450 per Month</li>
+                                        </ul> 
+                                  </dd>
+                                </div>
+                              </dl>
+                        </div>
+                        <div class="row d-flex justify-content-center" > 
+                            <div class="col-6 ">
+                                    <form method="POST" action="https://formspree.io/wooram.son@gmail.com" style="margin-bottom:100px;">
+                                        <div class="form-group">
+                                          <label for="exampleInputEmail1">Email address</label>
+                                          <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp" placeholder="Enter email">
+                                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleFormControlTextarea1">Your message</label>
+                                            <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                          </div>
+                                          <div class="d-flex justify-content-center"><button type="submit" class="btn btn-primary">Submit</button></div>
+                                      </form>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="site-footer has-top-divider">
+            <div class="container">
+                <div class="site-footer-inner">
+                    <div class="brand footer-brand">
+                        <a href="#">
+							<img class="asset-light" src="dist/images/logo-light.svg" alt="Logo">
+							<img class="asset-dark" src="dist/images/logo-dark.svg" alt="Logo">
+                        </a>
+                    </div>
+                    
+                    <div class="footer-copyright">&copy; 2019 LWSG PTE LTD, all rights reserved</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="dist/js/main.min.js"></script>
+</body>
+</html>
